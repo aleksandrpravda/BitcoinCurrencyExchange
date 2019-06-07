@@ -1,0 +1,871 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IdeasWorldCurrencyTestTask/Models/DataBaseManager.swift"
+            timestampString = "581345606.616667"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "fetchCurrenciesSignal(with:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (ReactiveKit.AtomicObserver&lt;Swift.Array&lt;IdeasWorldCurrencyTestTask.Currency&gt;, Swift.Never&gt;) -&gt; ReactiveKit.Disposable in IdeasWorldCurrencyTestTask.DataBaseManager.fetchCurrenciesSignal(with: Swift.Optional&lt;__C.NSPredicate&gt;) -&gt; ReactiveKit.Signal&lt;Swift.Array&lt;IdeasWorldCurrencyTestTask.Currency&gt;, Swift.Never&gt;"
+                  moduleName = "IdeasWorldCurrencyTestTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Parikmaher/Desktop/Projects/IdeasWorldCurrencyTestTask/IdeasWorldCurrencyTestTask/Models/DataBaseManager.swift"
+                  timestampString = "581271607.10593"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "1956">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (ReactiveKit.AtomicObserver&lt;Swift.Array&lt;IdeasWorldCurrencyTestTask.Currency&gt;, Swift.Never&gt;) -&gt; ReactiveKit.Disposable in IdeasWorldCurrencyTestTask.DataBaseManager.fetchCurrenciesSignal(with: Swift.Optional&lt;__C.NSPredicate&gt;) -&gt; ReactiveKit.Signal&lt;Swift.Array&lt;IdeasWorldCurrencyTestTask.Currency&gt;, Swift.Never&gt;"
+                  moduleName = "IdeasWorldCurrencyTestTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Parikmaher/Desktop/Projects/IdeasWorldCurrencyTestTask/IdeasWorldCurrencyTestTask/Models/DataBaseManager.swift"
+                  timestampString = "581271607.109064"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IdeasWorldCurrencyTestTask/Models/DataBaseManager.swift"
+            timestampString = "581345606.625427"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "fetchCurrenciesSignal(with:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (ReactiveKit.AtomicObserver&lt;Swift.Array&lt;IdeasWorldCurrencyTestTask.Currency&gt;, Swift.Never&gt;) -&gt; ReactiveKit.Disposable in IdeasWorldCurrencyTestTask.DataBaseManager.fetchCurrenciesSignal(with: Swift.Optional&lt;__C.NSPredicate&gt;) -&gt; ReactiveKit.Signal&lt;Swift.Array&lt;IdeasWorldCurrencyTestTask.Currency&gt;, Swift.Never&gt;"
+                  moduleName = "IdeasWorldCurrencyTestTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Parikmaher/Desktop/Projects/IdeasWorldCurrencyTestTask/IdeasWorldCurrencyTestTask/Models/DataBaseManager.swift"
+                  timestampString = "581271514.4084049"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "1386">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in closure #1 (ReactiveKit.AtomicObserver&lt;Swift.Array&lt;IdeasWorldCurrencyTestTask.Currency&gt;, Swift.Never&gt;) -&gt; ReactiveKit.Disposable in IdeasWorldCurrencyTestTask.DataBaseManager.fetchCurrenciesSignal(with: Swift.Optional&lt;__C.NSPredicate&gt;) -&gt; ReactiveKit.Signal&lt;Swift.Array&lt;IdeasWorldCurrencyTestTask.Currency&gt;, Swift.Never&gt;"
+                  moduleName = "IdeasWorldCurrencyTestTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Parikmaher/Desktop/Projects/IdeasWorldCurrencyTestTask/IdeasWorldCurrencyTestTask/Models/DataBaseManager.swift"
+                  timestampString = "581271514.41135"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "31"
+                  endingLineNumber = "31"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IdeasWorldCurrencyTestTask/Models/DataBaseManager.swift"
+            timestampString = "581345606.627267"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "fetchCurrenciesSignal(with:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (ReactiveKit.AtomicObserver&lt;Swift.Array&lt;IdeasWorldCurrencyTestTask.Currency&gt;, Swift.Never&gt;) -&gt; ReactiveKit.Disposable in IdeasWorldCurrencyTestTask.DataBaseManager.fetchCurrenciesSignal(with: Swift.Optional&lt;__C.NSPredicate&gt;) -&gt; ReactiveKit.Signal&lt;Swift.Array&lt;IdeasWorldCurrencyTestTask.Currency&gt;, Swift.Never&gt;"
+                  moduleName = "IdeasWorldCurrencyTestTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Parikmaher/Desktop/Projects/IdeasWorldCurrencyTestTask/IdeasWorldCurrencyTestTask/Models/DataBaseManager.swift"
+                  timestampString = "581271515.632816"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "995">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 () -&gt; () in closure #1 (ReactiveKit.AtomicObserver&lt;Swift.Array&lt;IdeasWorldCurrencyTestTask.Currency&gt;, Swift.Never&gt;) -&gt; ReactiveKit.Disposable in IdeasWorldCurrencyTestTask.DataBaseManager.fetchCurrenciesSignal(with: Swift.Optional&lt;__C.NSPredicate&gt;) -&gt; ReactiveKit.Signal&lt;Swift.Array&lt;IdeasWorldCurrencyTestTask.Currency&gt;, Swift.Never&gt;"
+                  moduleName = "IdeasWorldCurrencyTestTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Parikmaher/Desktop/Projects/IdeasWorldCurrencyTestTask/IdeasWorldCurrencyTestTask/Models/DataBaseManager.swift"
+                  timestampString = "581271515.635777"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IdeasWorldCurrencyTestTask/Models/DataBaseManager.swift"
+            timestampString = "581345606.6287481"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "update(currencies:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (ReactiveKit.AtomicObserver&lt;Swift.Bool, Swift.Error&gt;) -&gt; ReactiveKit.Disposable in closure #1 (Swift.Array&lt;IdeasWorldCurrencyTestTask.Currency&gt;) -&gt; ReactiveKit.Signal&lt;Swift.Bool, Swift.Error&gt; in IdeasWorldCurrencyTestTask.DataBaseManager.replaceSignal(currencies: Swift.Array&lt;IdeasWorldCurrencyTestTask.Currency&gt;) -&gt; ReactiveKit.Signal&lt;Swift.Bool, Swift.Error&gt;"
+                  moduleName = "IdeasWorldCurrencyTestTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Parikmaher/Desktop/Projects/IdeasWorldCurrencyTestTask/IdeasWorldCurrencyTestTask/Models/DataBaseManager.swift"
+                  timestampString = "581273529.021464"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "219">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in closure #1 (ReactiveKit.AtomicObserver&lt;Swift.Bool, Swift.Error&gt;) -&gt; ReactiveKit.Disposable in closure #1 (Swift.Array&lt;IdeasWorldCurrencyTestTask.Currency&gt;) -&gt; ReactiveKit.Signal&lt;Swift.Bool, Swift.Error&gt; in IdeasWorldCurrencyTestTask.DataBaseManager.replaceSignal(currencies: Swift.Array&lt;IdeasWorldCurrencyTestTask.Currency&gt;) -&gt; ReactiveKit.Signal&lt;Swift.Bool, Swift.Error&gt;"
+                  moduleName = "IdeasWorldCurrencyTestTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Parikmaher/Desktop/Projects/IdeasWorldCurrencyTestTask/IdeasWorldCurrencyTestTask/Models/DataBaseManager.swift"
+                  timestampString = "581273529.0295759"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "105">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IdeasWorldCurrencyTestTask/Models/DataBaseManager.swift"
+            timestampString = "581345606.630253"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "update(currencies:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IdeasWorldCurrencyTestTask/Models/DataBaseManager.swift"
+            timestampString = "581345606.63167"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "update(currencies:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IdeasWorldCurrencyTestTask/Models/DataBaseManager.swift"
+            timestampString = "581345606.632884"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "update(currencies:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IdeasWorldCurrencyTestTask/Models/DataBaseManager.swift"
+            timestampString = "581345606.634365"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "update(currencies:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;IdeasWorldCurrencyTestTask.Currency&gt;) -&gt; ReactiveKit.Signal&lt;Swift.Bool, Swift.Error&gt; in IdeasWorldCurrencyTestTask.DataBaseManager.replaceSignal(currencies: Swift.Array&lt;IdeasWorldCurrencyTestTask.Currency&gt;) -&gt; ReactiveKit.Signal&lt;Swift.Bool, Swift.Error&gt;"
+                  moduleName = "IdeasWorldCurrencyTestTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Parikmaher/Desktop/Projects/IdeasWorldCurrencyTestTask/IdeasWorldCurrencyTestTask/Models/DataBaseManager.swift"
+                  timestampString = "581273529.064257"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "51">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (ReactiveKit.AtomicObserver&lt;Swift.Bool, Swift.Error&gt;) -&gt; ReactiveKit.Disposable in closure #1 (Swift.Array&lt;IdeasWorldCurrencyTestTask.Currency&gt;) -&gt; ReactiveKit.Signal&lt;Swift.Bool, Swift.Error&gt; in IdeasWorldCurrencyTestTask.DataBaseManager.replaceSignal(currencies: Swift.Array&lt;IdeasWorldCurrencyTestTask.Currency&gt;) -&gt; ReactiveKit.Signal&lt;Swift.Bool, Swift.Error&gt;"
+                  moduleName = "IdeasWorldCurrencyTestTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Parikmaher/Desktop/Projects/IdeasWorldCurrencyTestTask/IdeasWorldCurrencyTestTask/Models/DataBaseManager.swift"
+                  timestampString = "581273529.0680389"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "188">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IdeasWorldCurrencyTestTask/ViewModels/CurrencySelectionViewModel.swift"
+            timestampString = "581583810.50286"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2"
+            endingLineNumber = "2"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IdeasWorldCurrencyTestTask/Views/ErrorCellTableViewCell.swift"
+            timestampString = "581375403.386441"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2"
+            endingLineNumber = "2"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IdeasWorldCurrencyTestTask/Services/NetworkService.swift"
+            timestampString = "581576151.577067"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "loadCurrencies()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IdeasWorldCurrencyTestTask/Services/NetworkService.swift"
+            timestampString = "581576151.580091"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "loadCurrencies()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IdeasWorldCurrencyTestTaskTests/NetworkServiceTest.swift"
+            timestampString = "581580537.129387"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "test_LoadCurrenciesSignal_PerformeFailOn_InternetConnectionNotReachable()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IdeasWorldCurrencyTestTaskTests/NetworkServiceTest.swift"
+            timestampString = "581580537.129458"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "test_LoadCurrenciesSignal_PerformeFailOn_InternetConnectionNotReachable()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IdeasWorldCurrencyTestTaskTests/NetworkServiceTest.swift"
+            timestampString = "581580537.12953"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "test_LoadCurrenciesSignal_PerformeFailOn_InternetConnectionNotReachable()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IdeasWorldCurrencyTestTaskTests/NetworkServiceTest.swift"
+            timestampString = "581580537.129596"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "test_LoadCurrenciesSignal_PerformeFailOn_InternetConnectionNotReachable()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IdeasWorldCurrencyTestTaskTests/NetworkServiceTest.swift"
+            timestampString = "581580537.1296591"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "test_LoadCurrenciesSignal_PerformeFailOn_InternetConnectionNotReachable()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IdeasWorldCurrencyTestTask/Services/NetworkService.swift"
+            timestampString = "581576151.590418"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "loadCurrencies()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IdeasWorldCurrencyTestTask/Services/NetworkService.swift"
+            timestampString = "581576151.590772"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "loadCurrencies()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (ReactiveKit.AtomicObserver&lt;ReactiveKit.LoadingState&lt;Swift.Array&lt;IdeasWorldCurrencyTestTask.Currency&gt;, Swift.Error&gt;, Swift.Never&gt;) -&gt; ReactiveKit.Disposable in IdeasWorldCurrencyTestTask.NetworkService.loadCurrencies() -&gt; ReactiveKit.Signal&lt;ReactiveKit.LoadingState&lt;Swift.Array&lt;IdeasWorldCurrencyTestTask.Currency&gt;, Swift.Error&gt;, Swift.Never&gt;"
+                  moduleName = "IdeasWorldCurrencyTestTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Parikmaher/Desktop/Projects/IdeasWorldCurrencyTestTask/IdeasWorldCurrencyTestTask/Services/NetworkService.swift"
+                  timestampString = "581466383.0966589"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "913">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 (Alamofire.Result&lt;Swift.Array&lt;IdeasWorldCurrencyTestTask.Currency&gt;&gt;) -&gt; () in closure #1 (ReactiveKit.AtomicObserver&lt;ReactiveKit.LoadingState&lt;Swift.Array&lt;IdeasWorldCurrencyTestTask.Currency&gt;, Swift.Error&gt;, Swift.Never&gt;) -&gt; ReactiveKit.Disposable in IdeasWorldCurrencyTestTask.NetworkService.loadCurrencies() -&gt; ReactiveKit.Signal&lt;ReactiveKit.LoadingState&lt;Swift.Array&lt;IdeasWorldCurrencyTestTask.Currency&gt;, Swift.Error&gt;, Swift.Never&gt;"
+                  moduleName = "IdeasWorldCurrencyTestTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Parikmaher/Desktop/Projects/IdeasWorldCurrencyTestTask/IdeasWorldCurrencyTestTask/Services/NetworkService.swift"
+                  timestampString = "581466383.099401"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "182">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IdeasWorldCurrencyTestTask/Services/NetworkService.swift"
+            timestampString = "581576151.59114"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "currencyRequest(by:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IdeasWorldCurrencyTestTask/Services/NetworkService.swift"
+            timestampString = "581576151.5914381"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "loadCurrencies()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IdeasWorldCurrencyTestTask/Services/NetworkService.swift"
+            timestampString = "581576151.591702"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "loadCurrencies()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IdeasWorldCurrencyTestTask/Services/NetworkService.swift"
+            timestampString = "581576151.592147"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "currencyRequest(by:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IdeasWorldCurrencyTestTask/Services/NetworkService.swift"
+            timestampString = "581576151.592463"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "currencyRequest(by:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IdeasWorldCurrencyTestTask/Services/NetworkService.swift"
+            timestampString = "581576151.5927581"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "currencyRequest(by:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IdeasWorldCurrencyTestTaskTests/DataBaseServiceTest.swift"
+            timestampString = "581581942.949734"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "test_update_Will_UpdateData_With_Same_Name()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IdeasWorldCurrencyTestTask/Models/DataBaseService.swift"
+            timestampString = "581597385.110474"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "fetchCurrenciesSignal()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IdeasWorldCurrencyTestTask/Models/DataBaseService.swift"
+            timestampString = "581597385.111111"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "fetchCurrenciesSignal()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IdeasWorldCurrencyTestTaskTests/CurrencySelectionViewModelTest.swift"
+            timestampString = "581581942.949971"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "TestCurrencySelectionViewModel"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IdeasWorldCurrencyTestTask/ViewModels/CurrencySelectionViewModel.swift"
+            timestampString = "581583810.522387"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "reloadData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IdeasWorldCurrencyTestTask/ViewModels/CurrencySelectionViewModel.swift"
+            timestampString = "581583810.524833"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "reloadData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IdeasWorldCurrencyTestTask/ViewModels/CurrencySelectionViewModel.swift"
+            timestampString = "581583810.529093"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "mapViewModel(with:_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IdeasWorldCurrencyTestTask/ViewModels/CurrencySelectionViewModel.swift"
+            timestampString = "581583810.531584"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "onLoadingSucceeded(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IdeasWorldCurrencyTestTask/ViewModels/CurrencySelectionViewModel.swift"
+            timestampString = "581583810.533823"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "onLoadingSucceeded(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IdeasWorldCurrencyTestTask/ViewModels/CurrencySelectionViewModel.swift"
+            timestampString = "581583810.536065"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "onLoadingSucceeded(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IdeasWorldCurrencyTestTask/Models/DataBaseService.swift"
+            timestampString = "581597385.111511"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "update(currencies:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IdeasWorldCurrencyTestTask/Models/DataBaseService.swift"
+            timestampString = "581597385.111838"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "update(currencies:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IdeasWorldCurrencyTestTask.DataBaseService.update(currencies: Swift.Array&lt;IdeasWorldCurrencyTestTask.Currency&gt;) -&gt; ReactiveKit.Signal&lt;(), Swift.Error&gt;"
+                  moduleName = "IdeasWorldCurrencyTestTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Parikmaher/Desktop/Projects/IdeasWorldCurrencyTestTask/IdeasWorldCurrencyTestTask/Models/DataBaseService.swift"
+                  timestampString = "581580754.894384"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "51">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (ReactiveKit.AtomicObserver&lt;(), Swift.Error&gt;) -&gt; ReactiveKit.Disposable in IdeasWorldCurrencyTestTask.DataBaseService.update(currencies: Swift.Array&lt;IdeasWorldCurrencyTestTask.Currency&gt;) -&gt; ReactiveKit.Signal&lt;(), Swift.Error&gt;"
+                  moduleName = "IdeasWorldCurrencyTestTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Parikmaher/Desktop/Projects/IdeasWorldCurrencyTestTask/IdeasWorldCurrencyTestTask/Models/DataBaseService.swift"
+                  timestampString = "581580754.902004"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "73">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IdeasWorldCurrencyTestTask/Models/DataBaseService.swift"
+            timestampString = "581597385.112174"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "update(currencies:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IdeasWorldCurrencyTestTaskTests/CurrencySelectionViewModelTest.swift"
+            timestampString = "581581942.954404"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "test_reloadData_will_failOn_ReloadData()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IdeasWorldCurrencyTestTask/Models/DataBaseService.swift"
+            timestampString = "581597385.112529"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "fetchCurrenciesSignal()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

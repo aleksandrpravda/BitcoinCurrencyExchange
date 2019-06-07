@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6Ag-Re-I2t">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Exchange-->
+        <scene sceneID="gd0-lK-1RK">
+            <objects>
+                <viewController storyboardIdentifier="CurrencyViewControllerIdentifire" id="PUb-gs-plB" customClass="CurrencyViewController" customModule="IdeasWorldCurrencyTestTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZSp-nA-tmi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" highlighted="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5QL-VD-K4F">
+                                <rect key="frame" x="8" y="104" width="189" height="64"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="2" lineBreakMode="tailTruncation" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PNa-sk-Vh7">
+                                <rect key="frame" x="217" y="104" width="189" height="64"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PNa-sk-Vh7" firstAttribute="leading" secondItem="5QL-VD-K4F" secondAttribute="trailing" constant="20" id="09B-ye-PeF"/>
+                            <constraint firstItem="PNa-sk-Vh7" firstAttribute="trailing" secondItem="PWt-T5-mjb" secondAttribute="trailing" constant="-8" id="BIx-CX-khT"/>
+                            <constraint firstItem="PNa-sk-Vh7" firstAttribute="width" secondItem="5QL-VD-K4F" secondAttribute="width" id="GsP-MB-fTr"/>
+                            <constraint firstItem="PNa-sk-Vh7" firstAttribute="height" secondItem="5QL-VD-K4F" secondAttribute="height" id="VGf-dd-keN"/>
+                            <constraint firstItem="5QL-VD-K4F" firstAttribute="leading" secondItem="PWt-T5-mjb" secondAttribute="leading" constant="8" id="Vya-sK-9UA"/>
+                            <constraint firstItem="PNa-sk-Vh7" firstAttribute="centerY" secondItem="5QL-VD-K4F" secondAttribute="centerY" id="mVr-0q-TrD"/>
+                            <constraint firstItem="5QL-VD-K4F" firstAttribute="top" secondItem="PWt-T5-mjb" secondAttribute="top" constant="60" id="ocJ-Wi-cIr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PWt-T5-mjb"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Exchange" id="w9A-F9-uPg"/>
+                    <connections>
+                        <outlet property="bitCoinTextField" destination="5QL-VD-K4F" id="BGX-YF-hvN"/>
+                        <outlet property="currencyValueLabel" destination="PNa-sk-Vh7" id="flo-Qs-GQo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8gk-aY-UUD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1546" y="-715"/>
+        </scene>
+        <!--Currency List-->
+        <scene sceneID="670-ET-ScH">
+            <objects>
+                <viewController storyboardIdentifier="CurrencySelectionViewControllerIdentifire" id="NIT-f0-Nfk" customClass="CurrencySelectionViewController" customModule="IdeasWorldCurrencyTestTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XbA-mX-cCx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="v4n-Cf-HZh">
+                                <rect key="frame" x="20" y="44" width="374" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CurrencySelectionCell" id="djU-FO-kkA" customClass="CurrencySelectionCell" customModule="IdeasWorldCurrencyTestTask" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="374" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="djU-FO-kkA" id="NF5-4r-enM">
+                                            <rect key="frame" x="0.0" y="0.0" width="336" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycz-O6-iNO">
+                                                    <rect key="frame" x="8" y="8" width="320" height="27.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ycz-O6-iNO" firstAttribute="leading" secondItem="NF5-4r-enM" secondAttribute="leading" constant="8" id="48K-Xo-rj7"/>
+                                                <constraint firstAttribute="bottom" secondItem="ycz-O6-iNO" secondAttribute="bottom" constant="8" id="Fa6-of-xpU"/>
+                                                <constraint firstAttribute="trailing" secondItem="ycz-O6-iNO" secondAttribute="trailing" constant="8" id="GnG-B1-iSZ"/>
+                                                <constraint firstItem="ycz-O6-iNO" firstAttribute="top" secondItem="NF5-4r-enM" secondAttribute="top" constant="8" id="bQT-9j-LBB"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="currencyLabel" destination="ycz-O6-iNO" id="Dch-84-BSn"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="errorCell" id="4Kz-IC-tnS" userLabel="ErrorCell" customClass="ErrorCell" customModule="IdeasWorldCurrencyTestTask" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="72" width="374" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4Kz-IC-tnS" id="vof-kH-8Ou">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9A-tf-zXq">
+                                                    <rect key="frame" x="8" y="8" width="358" height="27.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="a9A-tf-zXq" secondAttribute="bottom" constant="8" id="Emm-vD-SUI"/>
+                                                <constraint firstItem="a9A-tf-zXq" firstAttribute="top" secondItem="vof-kH-8Ou" secondAttribute="top" constant="8" id="MsD-Dm-4KX"/>
+                                                <constraint firstAttribute="trailing" secondItem="a9A-tf-zXq" secondAttribute="trailing" constant="8" id="p29-KF-H6C"/>
+                                                <constraint firstItem="a9A-tf-zXq" firstAttribute="leading" secondItem="vof-kH-8Ou" secondAttribute="leading" constant="8" id="s9a-xZ-gak"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="errorMessageLabel" destination="a9A-tf-zXq" id="SGG-gh-SeQ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="NIT-f0-Nfk" id="ZMd-wd-WZc"/>
+                                    <outlet property="delegate" destination="NIT-f0-Nfk" id="2li-d8-9tJ"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="v4n-Cf-HZh" firstAttribute="leading" secondItem="QFt-nw-NCp" secondAttribute="leading" constant="20" id="3x8-NT-bUP"/>
+                            <constraint firstItem="QFt-nw-NCp" firstAttribute="bottom" secondItem="v4n-Cf-HZh" secondAttribute="bottom" id="FRL-nE-QTz"/>
+                            <constraint firstItem="QFt-nw-NCp" firstAttribute="trailing" secondItem="v4n-Cf-HZh" secondAttribute="trailing" constant="20" id="Zf7-Gr-IpV"/>
+                            <constraint firstItem="v4n-Cf-HZh" firstAttribute="top" secondItem="QFt-nw-NCp" secondAttribute="top" id="tV4-Lz-4By"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QFt-nw-NCp"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Currency List" id="K3Z-Pu-og9"/>
+                    <connections>
+                        <outlet property="tableView" destination="v4n-Cf-HZh" id="R5Q-Ay-EkM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DXQ-Sr-y8p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="784" y="-715"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="R6E-NG-4vT">
+            <objects>
+                <navigationController id="6Ag-Re-I2t" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Es1-cI-K66">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xtF-zQ-Ohu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-30" y="-715"/>
+        </scene>
+    </scenes>
+</document>
