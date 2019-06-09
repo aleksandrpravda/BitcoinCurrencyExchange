@@ -18,8 +18,8 @@ class NetworkService {
         self.connectActivityIndicatorManager()
     }
     
-    func loadCurrencies() -> Signal<LoadingState<[Currency], Error>, Never>{
-        return Signal<LoadingState<[Currency], Error>, Never> { observer in
+    func loadCurrencies() -> Signal<LoadingState<[String: [String: Any]], Error>, Never>{
+        return Signal<LoadingState<[String: [String: Any]], Error>, Never> {[unowned self] observer in
             observer.next(LoadingState.loading)
             if !self.isReachable {
                 let error = NSError(domain: "", code: -1, userInfo:[NSLocalizedDescriptionKey: NSLocalizedString("Internet Connection Not Reachable", comment: "")])
@@ -43,11 +43,11 @@ class NetworkService {
         }
     }
     
-    private func currencyRequest(by urlString: String, completion: @escaping (Result<[Currency]>) -> ()) -> DataRequest {
+    private func currencyRequest(by urlString: String, completion: @escaping (Result<[String: [String: Any]]>) -> ()) -> DataRequest {
         let task = Alamofire.request(urlString, parameters: nil)
             .response(
                 responseSerializer: DataRequest.jsonResponseSerializer(),
-                completionHandler: {response in
+                completionHandler: { response in
                     switch response.result {
                     case .success(let value):
                         guard let dictionary = value as? [String: [String: Any]] else {
@@ -55,33 +55,13 @@ class NetworkService {
                             completion(Result.failure(error))
                             return
                         }
-                        completion(Result.success(self.parseCurrencies(dictionary)))
+                        completion(Result.success(dictionary))
                     case .failure(let error):
                         completion(Result.failure(error))
                     }
             }
         )
         return task
-    }
-    
-    private func parseCurrencies(_ dictionary: [String: [String: Any]]) -> [Currency] {
-        var currencies = [Currency]()
-        for (key, value) in dictionary {
-            let currency = self.parseCurrency(name: key, value)
-            currencies.append(currency)
-        }
-        return currencies
-    }
-    
-    private func parseCurrency(name: String, _ dictionary: [String: Any]) -> Currency {
-        let currency = Currency()
-        currency.name = name
-        currency.buy = dictionary[Constants.NetworkKeys.kBuy] as? Double ?? 0.0
-        currency.fifteenM = dictionary[Constants.NetworkKeys.kFifteenM] as? Double ?? 0.0
-        currency.last = dictionary[Constants.NetworkKeys.kLast] as? Double ?? 0.0
-        currency.symbol = dictionary[Constants.NetworkKeys.kSymbol] as? String ?? ""
-        currency.sell = dictionary[Constants.NetworkKeys.kSell] as? Double ?? 0.0
-        return currency
     }
     
     private func connectReachabilityManager() {

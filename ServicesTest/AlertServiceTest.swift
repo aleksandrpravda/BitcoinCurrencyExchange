@@ -12,7 +12,7 @@ class AlertServiceTest: XCTestCase {
         let sut = AlertService(navigationController)
         let error = NSError(domain: "", code: 0, userInfo: ["": ""])
         
-        sut.presentAlertError(error, ())
+        sut.presentAlertError(error)
             .observeNext { _ in
             XCTAssertNotNil(navigationController.presentationController?.presentedViewController)
             expectation.fulfill()

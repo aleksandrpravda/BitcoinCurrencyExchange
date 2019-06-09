@@ -4,26 +4,41 @@
 
 import RealmSwift
 import ReactiveKit
+import Bond
 
 class DataBaseService {
-    internal let inmemoryIdentifire: String
+    let dataObserver = MutableObservableArray<[Currency]>()
+//    internal let inmemoryIdentifire: String
+    private var notificationToken: NotificationToken?
+    private let configuration: Realm.Configuration
     
-    init(with inmemoryIdentifire: String) {
-        self.inmemoryIdentifire = inmemoryIdentifire
+    init(with configuration: Realm.Configuration) {
+//        self.inmemoryIdentifire = inmemoryIdentifire
+        self.configuration = configuration
     }
     
-    internal func realm() throws -> Realm {
-        let configuration = Realm.Configuration(inMemoryIdentifier: self.inmemoryIdentifire, deleteRealmIfMigrationNeeded: true)
-        return try Realm(configuration: configuration)
-    }
-    
-    func fetchCurrenciesSignal() -> Signal<[Currency], Error> {
-        return Signal<[Currency], Error> { observer in
+    func getResults() -> Signal<[Currency], Error> {
+        return Signal<[Currency], Error> { [unowned self] observer in
             do {
-                let realm = try self.realm()
-                let currencies = Array(realm.objects(Currency.self).sorted(byKeyPath: Constants.NetworkKeys.kName))
-                observer.next(currencies)
-                observer.completed()
+                self.notificationToken?.invalidate()
+                let realm = try Realm(configuration: self.configuration)
+                let results = realm.objects(Currency.self).sorted(byKeyPath: Constants.NetworkKeys.kName)
+                self.notificationToken = results.observe { changes in
+                    switch changes {
+                    case .initial(let results):
+                        let currencies = Array(results)
+                        observer.next(currencies)
+                        print("DataBaseService:getResults():initial")
+                    case .update(let value):
+                        let currencies = Array(value.0)
+                        observer.next(currencies)
+                        observer.completed()
+                        print("DataBaseService:getResults():update")
+                    case .error(let error):
+                        print("DataBaseService:getResults():update")
+                        observer.failed(error)
+                    }
+                }
             }
             catch let error {
                 observer.failed(error)
@@ -32,31 +47,36 @@ class DataBaseService {
         }
     }
     
-    func update(currencies: [Currency]) -> Signal<Void, Error> {
-        return Signal<Void, Error> { observer in
-            do {
-                let realm = try self.realm()
-                let inMemoryResults = realm.objects(Currency.self)
-                let existingCurrencies = Array(inMemoryResults)
-                let currencyToUpdate = self.contain(array: existingCurrencies, in: currencies)
-                let currenciesToDelete = self.notContain(array: existingCurrencies, in: currencies)
-                let currenciesToAdding = self.notContain(array: currencies, in: existingCurrencies)
-                try realm.write {
-                    realm.add(currenciesToAdding)
-                    realm.delete(currenciesToDelete)
-                    _ = currencyToUpdate.map { currency in
-                        currencies.map { newCurrency in
-                            if (currency.name == newCurrency.name) {
-                                self.update(old: currency, with: newCurrency)
+    func update(dictionary: [String: [String: Any]]) -> Signal<Void, Error> {
+        return Signal<Void, Error> {[unowned self] observer in
+            DispatchQueue(label: "background").async {
+                autoreleasepool {
+                    do {
+                        let realm = try Realm(configuration: self.configuration)
+                        let results = realm.objects(Currency.self).sorted(byKeyPath: Constants.NetworkKeys.kName)
+                        let existingCurrencies = Array(results)
+                        let currencies = self.parseCurrencies(dictionary)
+                        let currencyToUpdate = self.contain(array: existingCurrencies, in: currencies)
+                        let currenciesToDelete = self.notContain(array: existingCurrencies, in: currencies)
+                        let currenciesToAdding = self.notContain(array: currencies, in: existingCurrencies)
+                        try realm.write {
+                            realm.add(currenciesToAdding)
+                            realm.delete(currenciesToDelete)
+                            _ = currencyToUpdate.map { currency in
+                                currencies.map { newCurrency in
+                                    if (currency.name == newCurrency.name) {
+                                        self.update(old: currency, with: newCurrency)
+                                    }
+                                }
                             }
+                            observer.next()
+                            observer.completed()
                         }
                     }
-                    observer.next()
-                    observer.completed()
+                    catch let error {
+                        observer.failed(error)
+                    }
                 }
-            }
-            catch let error {
-                observer.failed(error)
             }
             return NonDisposable.instance
         }
@@ -85,5 +105,28 @@ class DataBaseService {
                 return firstElement.name == secondElement.name
             }
         }
+    }
+    
+    private func parseCurrencies(_ dictionary: [String: [String: Any]]) -> [Currency] {
+        var currencies = [Currency]()
+        for (key, value) in dictionary {
+            let currency = self.parseCurrency(name: key, value)
+            currencies.append(currency)
+        }
+        return currencies
+    }
+    
+    private func parseCurrency(name: String, _ dictionary: [String: Any]) -> Currency {
+        let currency = Currency()
+        currency.name = name
+        currency.buy = dictionary[Constants.NetworkKeys.kBuy] as? Double ?? 0.0
+        currency.fifteenM = dictionary[Constants.NetworkKeys.kFifteenM] as? Double ?? 0.0
+        currency.last = dictionary[Constants.NetworkKeys.kLast] as? Double ?? 0.0
+        currency.symbol = dictionary[Constants.NetworkKeys.kSymbol] as? String ?? ""
+        currency.sell = dictionary[Constants.NetworkKeys.kSell] as? Double ?? 0.0
+        return currency
+    }
+    deinit {
+        self.notificationToken?.invalidate()
     }
 }

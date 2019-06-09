@@ -3,6 +3,8 @@
 //
 
 import UIKit
+import ReactiveKit
+import RealmSwift
 
 class ViewModelServicesImpl: ViewModelServices {
     internal var navigationController: UINavigationController
@@ -14,7 +16,7 @@ class ViewModelServicesImpl: ViewModelServices {
     init(with navigationController: UINavigationController) {
         self.navigationController = navigationController
         self.networkService = NetworkService(with: Constants.kBlockchainURL)
-        self.databaseService = DataBaseService(with: Constants.Realm.kINMemoryIdentifier)
+        self.databaseService = DataBaseService(with: Realm.Configuration.defaultConfiguration)
         self.alertService = AlertService(navigationController)
         self.currencyExchangeService = CurrencyExchangeService()
     }

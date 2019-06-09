@@ -5,10 +5,14 @@
 import Foundation
 import Bond
 import ReactiveKit
+import RealmSwift
 
 class CurrencyViewModel: ViewModel {
     let bitcoinValue = Observable<String?>("")
     let currencyValue = Observable<String?>("")
+    let symbolValue = Observable<String?>("")
+    let buyValue = Observable<Double?>(0.0)
+    private var notificationToken = NotificationToken()
     
     private var currency: Currency
     private var services: ViewModelServices
@@ -17,6 +21,25 @@ class CurrencyViewModel: ViewModel {
     init(with services: ViewModelServices, currency: Currency) {
         self.services = services
         self.currency = currency
+        self.buyValue.value = currency.buy
+        self.symbolValue.value = currency.symbol
+        self.notificationToken = self.currency.observe { [weak self] objectChange in
+            switch objectChange {
+            case .change(let changes):
+                for change in changes {
+                    if change.name == Constants.NetworkKeys.kBuy {
+                        self?.buyValue.value = change.newValue as? Double
+                    } else if change.name == Constants.NetworkKeys.kSymbol {
+                        self?.symbolValue.value = change.newValue as? String
+                    }
+                }
+                break
+            case .error(_):
+                break
+            case .deleted:
+                break
+            }
+        }
         self.bindBitcoinValueToCurrencyValue()
     }
     
@@ -46,13 +69,17 @@ class CurrencyViewModel: ViewModel {
                 }
                 return safeDoule
             }
-            .flatMapLatest { value in
+            .flatMapLatest { [unowned self] value in
                 return self.services.getCurrencyExchangeService()
                     .exchange(count: value, by: self.currency.buy)
             }
-            .map { value in
+            .map { [unowned self] value in
                 return String(format: "%.2f%@", value, self.currency.symbol)
             }
             .bind(to: self.currencyValue)
+    }
+    
+    deinit {
+        self.notificationToken.invalidate()
     }
 }

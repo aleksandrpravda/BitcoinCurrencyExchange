@@ -1,14 +1,11 @@
 //
-//  CurrencySelectionViewModelTest.swift
-//  IdeasWorldCurrencyTestTaskTests
-//
-//  Created by Nick on 07/06/2019.
 //  Copyright © 2019 aleksandrpravda. All rights reserved.
 //
 
 import XCTest
 @testable import ReactiveKit
 @testable import IdeasWorldCurrencyTestTask
+@testable import RealmSwift
 
 class CurrencySelectionViewModelTest: XCTestCase {
     
@@ -52,8 +49,9 @@ class CurrencySelectionViewModelTest: XCTestCase {
         wait(for: [expectationSuccess], timeout: 10.0)
     }
     
-    static func getviewModel(_ navigationController: UINavigationController = UINavigationController(), _ dataURL: String = "MockCurrenciesResponse", db: String = "test_realm_database_service") -> TestCurrencySelectionViewModel {
-        let dbService = DataBaseServiceTest.getDatabaseServiceWithIdentifire(id: db)
+    static func getviewModel(_ navigationController: UINavigationController = UINavigationController(), _ dataURL: String = "MockCurrenciesResponse", db identifire: String = Constants.Realm.kINMemoryIdentifier) -> TestCurrencySelectionViewModel {
+        let configuration = Realm.Configuration(inMemoryIdentifier: identifire)
+        let dbService = DataBaseServiceTest.getDatabaseServiceWithConfiguration(configuration)
         dbService.clearDataBase()
         let services = ViewModelServicesImpl(NetworkServiceTest.getNetworkService(dataURL), dbService, navigationController)
         return TestCurrencySelectionViewModel(with: services)
@@ -74,13 +72,13 @@ class TestCurrencySelectionViewModel: CurrencySelectionViewModel {
     override init(with services: ViewModelServices) {
         super.init(with: services)
     }
-    override internal func onLoadingFailed(_ error: Error) {
-        super.onLoadingFailed(error)
-        self.onLoadingFailedCallback?(error)
-    }
-    
-    override func onLoadingSucceeded(_ currencies: [Currency]) {
-        super.onLoadingSucceeded(currencies)
-        self.onLoadingSucceededCallback?(currencies)
-    }
+//    override internal func onLoadingFailed(_ error: Error) {
+//        super.onLoadingFailed(error)
+//        self.onLoadingFailedCallback?(error)
+//    }
+//    
+//    override func onLoadingSucceeded(_ currencies: [Currency]) {
+//        super.onLoadingSucceeded(currencies)
+//        self.onLoadingSucceededCallback?(currencies)
+//    }
 }

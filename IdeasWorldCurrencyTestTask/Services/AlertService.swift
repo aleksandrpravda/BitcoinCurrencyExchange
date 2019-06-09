@@ -12,12 +12,12 @@ class AlertService {
         self.navigationController = navigationController
     }
     
-    func presentAlertError<T>(_ error: Error, _ value: T) -> SafeSignal<T> {
+    func presentAlertError(_ error: Error) -> SafeSignal<Error> {
         let alert = UIAlertController(title: NSLocalizedString("Error", comment: ""),
                                       message: error.localizedDescription,
                                       preferredStyle: UIAlertController.Style.alert)
         alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: ""), style: UIAlertAction.Style.default, handler: nil))
         self.navigationController.present(alert, animated: true, completion: nil)
-        return SafeSignal<T>(just: value)
+        return SafeSignal<Error>(just: error)
     }
 }

@@ -3,12 +3,17 @@
 //
 
 import UIKit
+import ReactiveKit
 
 class CurrencySelectionCell: UITableViewCell {
     @IBOutlet weak var currencyLabel: UILabel!
+    let bagDispose = DisposeBag()
     
     func bind(viewModel: CurrencySelectionCellViewModel) {
-        viewModel.currencyName.bind(to: currencyLabel.reactive.text)
+        bagDispose.dispose()
+        viewModel.currencyName
+            .bind(to: self.currencyLabel.reactive.text)
+            .dispose(in: bagDispose)
     }
 }
 
