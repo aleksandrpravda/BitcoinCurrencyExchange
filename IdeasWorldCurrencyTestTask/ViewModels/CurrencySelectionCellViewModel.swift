@@ -9,20 +9,20 @@ import RealmSwift
 
 class CurrencySelectionCellViewModel: ViewModel {
     let currencyName = Observable<String?>("")
-    private let currency: Currency
+    private let currency: Currency?
     private let services: ViewModelServices
-    private var notificationToken = NotificationToken()
+    private var notificationToken: NotificationToken?
     var currencyViewModel: CurrencyViewModel {
         get {
             return CurrencyViewModel(with: services, currency: currency)
         }
     }
     
-    init(with services: ViewModelServices, currency: Currency) {
+    init(with services: ViewModelServices, currency: Currency?) {
         self.currency = currency
         self.services = services
-        self.currencyName.value = self.currency.name
-        self.notificationToken = self.currency.observe { [weak self]  objectChange in
+        self.currencyName.value = self.currency?.name
+        self.notificationToken = self.currency?.observe { [weak self]  objectChange in
             switch objectChange {
             case .change(let changes):
                 for change in changes {
@@ -40,6 +40,6 @@ class CurrencySelectionCellViewModel: ViewModel {
     }
     
     deinit {
-        self.notificationToken.invalidate()
+        self.notificationToken?.invalidate()
     }
 }

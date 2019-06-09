@@ -20,9 +20,7 @@ class CurrencySelectionViewControllerTest: XCTestCase {
     
     func test_tableView_shouldReloadData_on_ValueChanged() {
         let sut = CurrencySelectionViewControllerTest.getViewController()
-        
-        let currency = Currency()
-        let cellSelectionViewModel = CurrencySelectionCellViewModelTest.getviewModel(currency)
+        let cellSelectionViewModel = CurrencySelectionCellViewModelTest.getviewModel()
         sut.viewModel?.currencyData.insert(cellSelectionViewModel, at: 0)
         XCTAssertEqual(sut.tableView.numberOfRows(inSection: 0), 1)
         

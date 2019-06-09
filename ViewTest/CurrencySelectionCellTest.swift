@@ -7,21 +7,22 @@ import XCTest
 
 class CurrencySelectionCellTest: XCTestCase {
     func test_outlets_isSet() {
-        let sut = CurrencySelectionCellTest.getCurrencySelectionCell()
+        let viewModel = CurrencySelectionCellViewModelTest.getviewModel(nil)
+        let sut = CurrencySelectionCellTest.getCurrencySelectionCell(viewModel)
         XCTAssertNotNil(sut.currencyLabel)
     }
     
     func test_errorMessageLabel_lissenTo_viewModels_errorMessage() {
-        let currency = Currency()
-        currency.name = "N"
-        let sut = CurrencySelectionCellTest.getCurrencySelectionCell(currency)
+        let viewModel = CurrencySelectionCellViewModelTest.getviewModel(nil)
+        let sut = CurrencySelectionCellTest.getCurrencySelectionCell(viewModel)
+        viewModel.currencyName.value = "N"
         XCTAssertEqual(sut.currencyLabel.text, "N")
     }
     
-    static func getCurrencySelectionCell(_ currency: Currency = Currency()) -> CurrencySelectionCell {
+    static func getCurrencySelectionCell(_ viewModel: CurrencySelectionCellViewModel) -> CurrencySelectionCell {
         let controller = CurrencySelectionViewControllerTest.getViewController()
         let sut = controller.tableView.dequeueReusableCell(withIdentifier: Constants.CellIdentifiers.currencySelectionCell, for: IndexPath(row: 0, section: 0)) as! CurrencySelectionCell
-        sut.bind(viewModel: CurrencySelectionCellViewModelTest.getviewModel(currency))
+        sut.bind(viewModel: viewModel)
         return sut
     }
 }

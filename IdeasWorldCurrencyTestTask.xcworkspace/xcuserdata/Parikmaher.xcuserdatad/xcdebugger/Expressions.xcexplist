@@ -68,6 +68,17 @@
          contextName = "CurrencySelectionViewModel.onLoadingSucceeded(_:):CurrencySelectionViewModel.swift">
       </ContextState>
       <ContextState
+         contextName = "closure #1 in NetworkServiceTest.test_LoadCurrencies_WithWrongPropertiesType_WillGetDefaultValues():NetworkServiceTest.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ViewModelServicesImplTest.test_push_viewmodel_WillPush_CurrencyViewController_For_CurrencyViewModel():ViewModelServicesImplTest.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "sut.networkService">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "closure #1 in CurrencySelectionViewModelTest.test_reloadData_will_failOn_ReloadData():CurrencySelectionViewModelTest.swift">
          <PersistentStrings>
             <PersistentString

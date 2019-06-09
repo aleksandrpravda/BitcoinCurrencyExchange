@@ -12,18 +12,18 @@ class CurrencyViewModel: ViewModel {
     let currencyValue = Observable<String?>("")
     let symbolValue = Observable<String?>("")
     let buyValue = Observable<Double?>(0.0)
-    private var notificationToken = NotificationToken()
+    private var notificationToken: NotificationToken?
     
-    private var currency: Currency
+    private var currency: Currency?
     private var services: ViewModelServices
     
     
-    init(with services: ViewModelServices, currency: Currency) {
+    init(with services: ViewModelServices, currency: Currency?) {
         self.services = services
         self.currency = currency
-        self.buyValue.value = currency.buy
-        self.symbolValue.value = currency.symbol
-        self.notificationToken = self.currency.observe { [weak self] objectChange in
+        self.buyValue.value = currency?.buy
+        self.symbolValue.value = currency?.symbol
+        self.notificationToken = self.currency?.observe { [weak self] objectChange in
             switch objectChange {
             case .change(let changes):
                 for change in changes {
@@ -71,15 +71,15 @@ class CurrencyViewModel: ViewModel {
             }
             .flatMapLatest { [unowned self] value in
                 return self.services.getCurrencyExchangeService()
-                    .exchange(count: value, by: self.currency.buy)
+                    .exchange(count: value, by: self.buyValue.value ?? 0)
             }
             .map { [unowned self] value in
-                return String(format: "%.2f%@", value, self.currency.symbol)
+                return String(format: "%.2f%@", value, self.currency?.symbol ?? "")
             }
             .bind(to: self.currencyValue)
     }
     
     deinit {
-        self.notificationToken.invalidate()
+        self.notificationToken?.invalidate()
     }
 }

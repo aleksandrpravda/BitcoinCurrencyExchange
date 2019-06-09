@@ -73,8 +73,8 @@ class CurrencyViewModelTest: XCTestCase {
     func getviewModel(_ buyValue: Double = 543.189) ->CurrencyViewModel {
         let navigationController = UINavigationController()
         let services = ViewModelServicesImpl(with: navigationController)
-        let currency = Currency()
-        currency.buy = buyValue
-        return CurrencyViewModel(with: services, currency: currency)
+        let viewModel = CurrencyViewModel(with: services, currency: nil)
+        viewModel.buyValue.value = buyValue
+        return viewModel
     }
 }

@@ -8,12 +8,12 @@ import XCTest
 
 class CurrencySelectionCellViewModelTest: XCTestCase {
     func test_currencyValue_ShoulNotBeNil() {
-        let sut = CurrencySelectionCellViewModelTest.getviewModel(Currency())
+        let sut = CurrencySelectionCellViewModelTest.getviewModel()
         XCTAssertNotNil(sut.currencyViewModel)
     }
     
     func test_currencyName_perform_signal_on_valueSet() {
-        let sut = CurrencySelectionCellViewModelTest.getviewModel(Currency())
+        let sut = CurrencySelectionCellViewModelTest.getviewModel()
         let expectation = XCTestExpectation(description: "CurrencyViewModelbind")
         SafeSignal<String> (just: "M").bind(to: sut.currencyName)
         sut.currencyName.observeNext { result in
@@ -25,7 +25,7 @@ class CurrencySelectionCellViewModelTest: XCTestCase {
         wait(for: [expectation], timeout: 10.0)
     }
     
-    static func getviewModel(_ currency: Currency, _ navigationController: UINavigationController = UINavigationController()) ->CurrencySelectionCellViewModel {
+    static func getviewModel(_ currency: Currency? = nil, _ navigationController: UINavigationController = UINavigationController()) ->CurrencySelectionCellViewModel {
         let services = ViewModelServicesImpl(with: navigationController)
         return CurrencySelectionCellViewModel(with: services, currency: currency)
     }
